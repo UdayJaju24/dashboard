@@ -211,13 +211,13 @@
 // export default ActivityChart;
 
 
-// src/ActivityChart.tsx
+
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
 import Highcharts3D from 'highcharts/highcharts-3d';
-import './ActivityChart.css'
+import './ActivityChart.css';
 
 Highcharts3D(Highcharts);
 
@@ -374,51 +374,59 @@ const ActivityChart: React.FC = () => {
   const totalCounts = getTotalCounts();
 
   return (
-    <div>
-      <div>
-        <button onClick={() => handleMetricChange('commits')}>Commits</button>
-        <button onClick={() => handleMetricChange('pull_requests_opened')}>PRs Opened</button>
-        <button onClick={() => handleMetricChange('pull_requests_merged')}>PRs Merged</button>
-        <button onClick={() => handleMetricChange('meetings')}>Meetings</button>
-        <button onClick={() => handleMetricChange('documentation')}>Documentation</button>
+    <div className="container">
+      <div className="sidebar">
+        <div className="developer-select">
+          <label htmlFor="developer-select">Select Developer: </label>
+          <select id="developer-select" onChange={(e) => handleDeveloperChange(e.target.value)}>
+            <option value="">All</option>
+            {uniqueDevelopers.map(dev => (
+              <option key={dev} value={dev}>{dev}</option>
+            ))}
+          </select>
+        </div>
+        <div className="buttons">
+          <button onClick={() => handleMetricChange('commits')} className={selectedMetric === 'commits' ? 'active' : ''}>Commits</button>
+          <button onClick={() => handleMetricChange('pull_requests_opened')} className={selectedMetric === 'pull_requests_opened' ? 'active' : ''}>PRs Opened</button>
+          <button onClick={() => handleMetricChange('pull_requests_merged')} className={selectedMetric === 'pull_requests_merged' ? 'active' : ''}>PRs Merged</button>
+          <button onClick={() => handleMetricChange('meetings')} className={selectedMetric === 'meetings' ? 'active' : ''}>Meetings</button>
+          <button onClick={() => handleMetricChange('documentation')} className={selectedMetric === 'documentation' ? 'active' : ''}>Documentation</button>
+        </div>
       </div>
-      <div>
-        <label htmlFor="developer-select">Select Developer: </label>
-        <select id="developer-select" onChange={(e) => handleDeveloperChange(e.target.value)}>
-          <option value="">All</option>
-          {uniqueDevelopers.map(dev => (
-            <option key={dev} value={dev}>{dev}</option>
-          ))}
-        </select>
+      <div className="content">
+        <div className="chart-container">
+          <HighchartsReact
+            highcharts={Highcharts}
+            options={options}
+          />
+        </div>
+        <div className="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Developer</th>
+                <th>Commits</th>
+                <th>PRs Opened</th>
+                <th>PRs Merged</th>
+                <th>Meetings</th>
+                <th>Documentation</th>
+              </tr>
+            </thead>
+            <tbody>
+              {uniqueDevelopers.map(developer => (
+                <tr key={developer}>
+                  <td>{developer}</td>
+                  <td>{totalCounts[developer].commits}</td>
+                  <td>{totalCounts[developer].pull_requests_opened}</td>
+                  <td>{totalCounts[developer].pull_requests_merged}</td>
+                  <td>{totalCounts[developer].meetings}</td>
+                  <td>{totalCounts[developer].documentation}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </div>
-      <HighchartsReact
-        highcharts={Highcharts}
-        options={options}
-      />
-      <table>
-        <thead>
-          <tr>
-            <th>Developer</th>
-            <th>Commits</th>
-            <th>PRs Opened</th>
-            <th>PRs Merged</th>
-            <th>Meetings</th>
-            <th>Documentation</th>
-          </tr>
-        </thead>
-        <tbody>
-          {uniqueDevelopers.map(developer => (
-            <tr key={developer}>
-              <td>{developer}</td>
-              <td>{totalCounts[developer].commits}</td>
-              <td>{totalCounts[developer].pull_requests_opened}</td>
-              <td>{totalCounts[developer].pull_requests_merged}</td>
-              <td>{totalCounts[developer].meetings}</td>
-              <td>{totalCounts[developer].documentation}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
     </div>
   );
 };
