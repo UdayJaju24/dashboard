@@ -1,10 +1,8 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000';
-
 export const fetchActivities = async () => {
   try {
-    const response = await axios.get(`${API_URL}/activities`);
+    const response = await axios.get('https://raw.githubusercontent.com/UdayJaju24/dashboard/main/db.json');
     return response.data;
   } catch (error) {
     console.error('Error fetching activities:', error);
