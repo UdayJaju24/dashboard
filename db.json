@@ -1,0 +1,94 @@
+{
+  "activities": [
+    {
+      "id": 1,
+      "date": "2023-06-01",
+      "name": "Alice",
+      "commits": 5,
+      "pull_requests_opened": 2,
+      "pull_requests_merged": 1,
+      "meetings": 3,
+      "documentation": 2
+    },
+    {
+      "id": 2,
+      "date": "2023-06-01",
+      "name": "Bob",
+      "commits": 3,
+      "pull_requests_opened": 1,
+      "pull_requests_merged": 1,
+      "meetings": 2,
+      "documentation": 1
+    },
+    {
+      "id": 3,
+      "date": "2023-06-02",
+      "name": "Alice",
+      "commits": 7,
+      "pull_requests_opened": 1,
+      "pull_requests_merged": 2,
+      "meetings": 2,
+      "documentation": 4
+    },
+    {
+      "id": 4,
+      "date": "2023-06-02",
+      "name": "Bob",
+      "commits": 4,
+      "pull_requests_opened": 2,
+      "pull_requests_merged": 1,
+      "meetings": 1,
+      "documentation": 2
+    },
+    {
+      "id": 5,
+      "date": "2023-06-03",
+      "name": "Alice",
+      "commits": 6,
+      "pull_requests_opened": 3,
+      "pull_requests_merged": 1,
+      "meetings": 3,
+      "documentation": 3
+    },
+    {
+      "id": 6,
+      "date": "2023-06-03",
+      "name": "Bob",
+      "commits": 2,
+      "pull_requests_opened": 1,
+      "pull_requests_merged": 1,
+      "meetings": 2,
+      "documentation": 1
+    },
+    {
+      "id": 7,
+      "date": "2023-06-04",
+      "name": "Alice",
+      "commits": 2,
+      "pull_requests_opened": 3,
+      "pull_requests_merged": 2,
+      "meetings": 0,
+      "documentation": 1
+    },
+    {
+      "id": 8,
+      "date": "2023-06-04",
+      "name": "Bob",
+      "commits": 5,
+      "pull_requests_opened": 2,
+      "pull_requests_merged": 1,
+      "meetings": 3,
+      "documentation": 2
+    },
+    {
+      "id": 8,
+      "date": "2023-06-04",
+      "name": "Uday",
+      "commits": 5,
+      "pull_requests_opened": 2,
+      "pull_requests_merged": 1,
+      "meetings": 3,
+      "documentation": 2
+    }
+  ]
+}

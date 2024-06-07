@@ -1,0 +1,245 @@
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+button {
+  margin-bottom: 10px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  background-color: white;
+  color: black;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+select {
+  padding: 12px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.chart-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 992px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  button {
+    flex: 1;
+    margin-right: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  select {
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  table {
+    margin-top: 15px;
+  }
+
+  th, td {
+    padding: 10px;
+  }
+
+  .chart-container {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  button {
+    flex: 1;
+    margin-right: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  select {
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  table {
+    margin-top: 15px;
+  }
+
+  th, td {
+    padding: 10px;
+  }
+
+  .chart-container {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 496px) {
+  /* Force table to not be like tables anymore */
+  table, thead, tbody, th, td, tr { 
+    display: block; 
+  }
+  
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr { 
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  
+  tr { border: 1px solid #ccc; }
+  
+  td { 
+    /* Behave like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee; 
+    position: relative;
+    padding-left: 50%; 
+  }
+  
+  td:before { 
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%; 
+    padding-right: 10px; 
+    white-space: nowrap;
+  }
+  
+  /*
+  Label the data
+  */
+  td:nth-of-type(1):before { content: "Developer"; }
+  td:nth-of-type(2):before { content: "Commits"; }
+  td:nth-of-type(3):before { content: "PRs Opened"; }
+  td:nth-of-type(4):before { content: "PRs Merged"; }
+  td:nth-of-type(5):before { content: "Meetings"; }
+  td:nth-of-type(6):before { content: "Documentation"; }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  button {
+    flex: 1 1 calc(33.33% - 10px);
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  button:nth-of-type(3n) {
+    margin-right: 0;
+  }
+
+  .chart-container {
+    width: 100%;
+    padding: 10px;
+  }
+}
