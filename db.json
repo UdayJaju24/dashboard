@@ -3,7 +3,7 @@
     {
       "id": 1,
       "date": "2023-06-01",
-      "name": "Alice",
+      "name": "Nilesh",
       "commits": 5,
       "pull_requests_opened": 2,
       "pull_requests_merged": 1,
@@ -13,7 +13,7 @@
     {
       "id": 2,
       "date": "2023-06-01",
-      "name": "Bob",
+      "name": "Chirag",
       "commits": 3,
       "pull_requests_opened": 1,
       "pull_requests_merged": 1,
@@ -23,65 +23,125 @@
     {
       "id": 3,
       "date": "2023-06-02",
-      "name": "Alice",
-      "commits": 7,
-      "pull_requests_opened": 1,
+      "name": "Nilesh",
+      "commits": 4,
+      "pull_requests_opened": 2,
       "pull_requests_merged": 2,
-      "meetings": 2,
-      "documentation": 4
+      "meetings": 1,
+      "documentation": 1
     },
     {
       "id": 4,
       "date": "2023-06-02",
-      "name": "Bob",
-      "commits": 4,
+      "name": "Chirag",
+      "commits": 3,
       "pull_requests_opened": 2,
-      "pull_requests_merged": 1,
-      "meetings": 1,
+      "pull_requests_merged": 2,
+      "meetings": 3,
       "documentation": 2
     },
     {
       "id": 5,
       "date": "2023-06-03",
-      "name": "Alice",
-      "commits": 6,
+      "name": "Nilesh",
+      "commits": 3,
       "pull_requests_opened": 3,
-      "pull_requests_merged": 1,
-      "meetings": 3,
+      "pull_requests_merged": 4,
+      "meetings": 1,
       "documentation": 3
     },
     {
       "id": 6,
       "date": "2023-06-03",
-      "name": "Bob",
-      "commits": 2,
-      "pull_requests_opened": 1,
-      "pull_requests_merged": 1,
-      "meetings": 2,
-      "documentation": 1
+      "name": "Chirag",
+      "commits": 5,
+      "pull_requests_opened": 3,
+      "pull_requests_merged": 2,
+      "meetings": 4,
+      "documentation": 2
     },
     {
       "id": 7,
       "date": "2023-06-04",
-      "name": "Alice",
-      "commits": 2,
-      "pull_requests_opened": 3,
+      "name": "Nilesh",
+      "commits": 3,
+      "pull_requests_opened": 4,
       "pull_requests_merged": 2,
-      "meetings": 0,
-      "documentation": 1
+      "meetings": 2,
+      "documentation": 0
     },
     {
       "id": 8,
       "date": "2023-06-04",
-      "name": "Bob",
-      "commits": 5,
-      "pull_requests_opened": 2,
-      "pull_requests_merged": 1,
+      "name": "Chirag",
+      "commits": 6,
+      "pull_requests_opened": 4,
+      "pull_requests_merged": 5,
       "meetings": 3,
       "documentation": 2
     },
     {
-      "id": 8,
+      "id": 9,
+      "date": "2023-06-05",
+      "name": "Nilesh",
+      "commits": 4,
+      "pull_requests_opened": 4,
+      "pull_requests_merged": 6,
+      "meetings": 0,
+      "documentation": 1
+    },
+    {
+      "id": 10,
+      "date": "2023-06-05",
+      "name": "Chirag",
+      "commits": 4,
+      "pull_requests_opened": 3,
+      "pull_requests_merged": 5,
+      "meetings": 4,
+      "documentation": 2
+    },
+    {
+      "id": 11,
+      "date": "2023-06-06",
+      "name": "Nilesh",
+      "commits": 6,
+      "pull_requests_opened": 3,
+      "pull_requests_merged": 5,
+      "meetings": 2,
+      "documentation": 0
+    },
+    {
+      "id": 12,
+      "date": "2023-06-06",
+      "name": "Chirag",
+      "commits": 3,
+      "pull_requests_opened": 6,
+      "pull_requests_merged": 2,
+      "meetings": 3,
+      "documentation": 1
+    },
+    {
+      "id": 13,
+      "date": "2023-06-07",
+      "name": "Nilesh",
+      "commits": 4,
+      "pull_requests_opened": 3,
+      "pull_requests_merged": 6,
+      "meetings": 1,
+      "documentation": 3
+    },
+    {
+      "id": 14,
+      "date": "2023-06-07",
+      "name": "Chirag",
+      "commits": 3,
+      "pull_requests_opened": 1,
+      "pull_requests_merged": 4,
+      "meetings": 2,
+      "documentation": 2
+    },
+    {
+      "id": 15,
       "date": "2023-06-04",
       "name": "Uday",
       "commits": 5,
@@ -89,6 +149,36 @@
       "pull_requests_merged": 1,
       "meetings": 3,
       "documentation": 2
+    },
+    {
+      "id": 16,
+      "date": "2023-06-05",
+      "name": "Uday",
+      "commits": 3,
+      "pull_requests_opened": 4,
+      "pull_requests_merged": 2,
+      "meetings": 1,
+      "documentation": 0
+    },
+    {
+      "id": 17,
+      "date": "2023-06-06",
+      "name": "Uday",
+      "commits": 4,
+      "pull_requests_opened": 1,
+      "pull_requests_merged": 6,
+      "meetings": 2,
+      "documentation": 1
+    },
+    {
+      "id": 18,
+      "date": "2023-06-07",
+      "name": "Uday",
+      "commits": 4,
+      "pull_requests_opened": 5,
+      "pull_requests_merged": 2,
+      "meetings": 1,
+      "documentation": 0
     }
   ]
 }
