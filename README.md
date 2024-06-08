@@ -246,6 +246,6 @@ dev-activity-dashboard/
 ```
 
 ## Hosted Website Link
-<a href="https://udayjaju24.github.io/dashboard/" target="_blank">Click here</a> to preview the dashboard.
+**To Preview the dashboard [click here](https://udayjaju24.github.io/dashboard/).** 
 
  
