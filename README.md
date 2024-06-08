@@ -187,7 +187,7 @@ I referred this [blog](https://medium.com/@swarajgosavi20/how-to-deploy-react-on
 
 - Install gh-pages:
   
-  Install gh-pages using npm.
+Install gh-pages using npm.
 ```
 npm install --save gh-pages
 ```
