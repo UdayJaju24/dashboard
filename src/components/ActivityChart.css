@@ -1,3 +1,4 @@
+/* Styles for the container */
 .container {
   display: flex;
   max-width: 1200px;
@@ -6,18 +7,21 @@
   font-family: Arial, sans-serif;
 }
 
+/* Styles for the sidebar */
 .sidebar {
   display: flex;
   flex-direction: column;
   margin-right: 20px;
 }
 
+/* Styles for the buttons */
 .buttons {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
 }
 
+/* Styles for the buttons */
 button {
   margin-bottom: 10px;
   padding: 12px 24px;
@@ -30,32 +34,38 @@ button {
   transition: all 0.3s ease;
 }
 
+/* Styles for button hover effect */
 button:hover {
   background-color: #007bff;
   color: white;
 }
 
+/* Styles for active button */
 button.active {
   background-color: #007bff;
   color: white;
 }
 
+/* Styles for select container */
 .select-container {
   margin-bottom: 20px;
 }
 
+/* Styles for select element */
 select {
   padding: 12px;
   font-size: 16px;
   margin-bottom: 20px;
 }
 
+/* Styles for the content area */
 .content {
   display: flex;
   flex-direction: column;
   flex: 1;
 }
 
+/* Styles for the chart container */
 .chart-container {
   flex: 1;
   display: flex;
@@ -63,6 +73,7 @@ select {
   align-items: center;
 }
 
+/* Styles for the table container */
 .table-container {
   flex: 1;
   display: flex;
@@ -70,6 +81,7 @@ select {
   justify-content: flex-end;
 }
 
+/* Styles for the table */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -77,26 +89,33 @@ table {
   border: 1px solid #ddd;
 }
 
+/* Styles for table header and data cells */
 th, td {
   border: 1px solid #ddd;
   padding: 12px;
   text-align: center;
 }
 
+/* Styles for table header */
 th {
   background-color: #f4f4f4;
 }
 
+/* Styles for alternate background color for first column */
 th:nth-child(1), td:nth-child(1) {
   background-color: #d3d3d3;
 }
 
+
 /* Media Queries for Responsive Design */
+/* Media query for medium-sized screens */
 @media screen and (max-width: 992px) {
+  /* Adjust layout to column for better responsiveness */
   .container {
     flex-direction: column;
   }
 
+  /* Adjust sidebar layout for medium-sized screens */
   .sidebar {
     flex-direction: row;
     flex-wrap: wrap;
@@ -104,12 +123,14 @@ th:nth-child(1), td:nth-child(1) {
     margin-bottom: 20px;
   }
 
+  /* Adjust button layout for medium-sized screens */
   .buttons {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
   }
 
+  /* Adjust button styles for medium-sized screens */
   button {
     flex: 1;
     margin-right: 10px;
@@ -118,31 +139,38 @@ th:nth-child(1), td:nth-child(1) {
     margin-bottom: 10px;
   }
 
+  /* Adjust select element styles for medium-sized screens */
   select {
     padding: 10px;
     font-size: 14px;
     margin-bottom: 20px;
   }
 
+  /* Adjust table styles for medium-sized screens */
   table {
     margin-top: 15px;
   }
 
+  /* Adjust table cell styles for medium-sized screens */
   th, td {
     padding: 10px;
   }
 
+  /* Adjust chart container styles for medium-sized screens */
   .chart-container {
     width: 100%;
     padding: 10px;
   }
 }
 
+/* Media query for small-sized screens */
 @media screen and (max-width: 768px) {
+  /* Adjust layout to column for better responsiveness */
   .container {
     flex-direction: column;
   }
 
+  /* Adjust sidebar layout for small-sized screens */
   .sidebar {
     flex-direction: row;
     flex-wrap: wrap;
@@ -150,12 +178,14 @@ th:nth-child(1), td:nth-child(1) {
     margin-bottom: 20px;
   }
 
+  /* Adjust button layout for small-sized screens */
   .buttons {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
   }
 
+  /* Adjust button styles for small-sized screens */
   button {
     flex: 1;
     margin-right: 10px;
@@ -164,25 +194,30 @@ th:nth-child(1), td:nth-child(1) {
     margin-bottom: 10px;
   }
 
+  /* Adjust select element styles for small-sized screens */
   select {
     padding: 10px;
     font-size: 14px;
     margin-bottom: 20px;
   }
 
+  /* Adjust table styles for small-sized screens */
   table {
     margin-top: 15px;
   }
 
+  /* Adjust table cell styles for small-sized screens */
   th, td {
     padding: 10px;
   }
 
+  /* Adjust chart container styles for small-sized screens */
   .chart-container {
     width: 100%;
     padding: 10px;
   }
 }
+
 
 @media screen and (max-width: 496px) {
   /* Force table to not be like tables anymore */
@@ -228,10 +263,12 @@ th:nth-child(1), td:nth-child(1) {
   td:nth-of-type(5):before { content: "Meetings"; }
   td:nth-of-type(6):before { content: "Documentation"; }
 
+  /* Alternate background color for the first column */
   td:nth-of-type(1) {
     background-color: #d3d3d3;
   }
 
+  /* Styles for buttons */
   .buttons {
     display: flex;
     flex-direction: row;
@@ -249,6 +286,7 @@ th:nth-child(1), td:nth-child(1) {
     margin-right: 0;
   }
 
+  /* Styles for the chart container */
   .chart-container {
     width: 100%;
     padding: 10px;
