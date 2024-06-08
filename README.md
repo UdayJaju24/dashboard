@@ -225,7 +225,8 @@ Finally run the [npm run deploy] code in the terminal to deploy the react applic
 npm run deploy
 ```
 
-#####Final Folder Structure would be
+
+##### Final Folder Structure would be
 ```
 dev-activity-dashboard/
 ├── public/
@@ -244,5 +245,5 @@ dev-activity-dashboard/
 ├── ...
 ```
 
-##Hosted Website Link
-**To Preview the dashboard [click here](https://udayjaju24.github.io/dashboard/). 
+## Hosted Website Link
+**To Preview the dashboard [click here](https://udayjaju24.github.io/dashboard/).** 
