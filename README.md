@@ -64,9 +64,9 @@ npm install axios recharts styled-components @types/styled-components
   json-server --watch db.json --port 5000
   ```
 ### Getting to know more
-4. Fetch Data"
+4. Fetch Data:
 
-- How Data is fetched from GitHub hosted link
+- How Data is fetched from GitHub hosted link:-
   - Create src/ActivityChart.tsx
   
   We use Axios for data fetching (Already installed in Step 2). And below code is used to fetch data.
@@ -88,7 +88,7 @@ npm install axios recharts styled-components @types/styled-components
       getActivities();
     }, []);
   ```
-- How Data is fetched on localhost
+- How Data is fetched on localhost:-
   
     We use Axios for data fetching(ALready installed in Step 2). And below code is used to fetch data.
   - Create src/services/api.ts
@@ -117,15 +117,15 @@ npm install axios recharts styled-components @types/styled-components
        getActivities();
     }, []);
   ```
-  ***And I have commented the complete code in ActivityChart.jsx file below current code which fetches the data from json file on localhost and visulises the data.***
+**Note:** And I have commented the complete code in ActivityChart.jsx file below current code which fetches the data from json file on localhost and visulises the data.
 
-5. Visualize Data
+5. Visualize Data:
 
-Install Highcharts and Highcharts React wrapper
+- Install Highcharts and Highcharts React wrapper
 ```
 npm install highcharts highcharts-react-official
 ```
-We have used Highcharts for visualization. Then Highcharts options are configured to display a 3D pie chart, including chart type, 3D settings, title, tooltip, plot options, and series data. A table displays the total counts for each activity metric per developer, providing a clear overview of contributions. 
+- We have used Highcharts for visualization. Then Highcharts options are configured to display a 3D pie chart, including chart type, 3D settings, title, tooltip, plot options, and series data. A table displays the total counts for each activity metric per developer, providing a clear overview of contributions. 
 ```
 // Configure Highcharts options
   const options = {
@@ -166,7 +166,7 @@ We have used Highcharts for visualization. Then Highcharts options are configure
   };
 ```
 
-6. CSS Styling
+6. CSS Styling:
 
 - The container is styled with a flexible layout, maximum width, and padding for a neat and centered appearance. 
 - The sidebar is organized in a column layout with a margin for spacing. 
@@ -179,7 +179,7 @@ We have used Highcharts for visualization. Then Highcharts options are configure
   - For extra-small screens, the table layout is transformed into a block display to fit narrow screens, with headers hidden and data cells behaving like rows, ensuring accessibility and usability across different devices.
 
 ### Deployment of Project
-7. Deploy the Project on GitHub
+7. Deploy the Project on GitHub:
 
 I referred this [blog](https://medium.com/@swarajgosavi20/how-to-deploy-react-on-github-pages-33e427f0bd36) to host the project on GitHub.
 
@@ -243,3 +243,6 @@ dev-activity-dashboard/
 ├── package.json
 ├── ...
 ```
+
+##Hosted Website Link
+**To Preview the dashboard [click here](https://udayjaju24.github.io/dashboard/). 
