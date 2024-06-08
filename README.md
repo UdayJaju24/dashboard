@@ -67,6 +67,7 @@ npm install axios recharts styled-components @types/styled-components
 4. Fetch Data:
 
 - How Data is fetched from GitHub hosted link:-
+  
    We use Axios for data fetching (Already installed in Step 2). And below code is used to fetch data.   
   - Create src/ActivityChart.tsx
   
